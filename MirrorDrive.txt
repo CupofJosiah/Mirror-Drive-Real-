@@ -189,7 +189,7 @@ public class Robot extends IterativeRobot implements PIDOutput {
 				verJoystick = b;
 			}
 
-			float c = sqrt(abs(a * a) + abs(b * b));
+			float c = (float) sqrt(abs(a * a) + abs(b * b));
 
 			SetLeftMotors(verJoystick + horJoystick);
 			SetRightMotors(-verJoystick + horJoystick);
